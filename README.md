@@ -99,8 +99,6 @@ class MyApp extends StatelessWidget {
 https://github.com/user-attachments/assets/026aeab1-0055-49e7-bd02-77584322eb81
 
 
-![Screenshot_20250113_175330-2](https://github.com/user-attachments/assets/ba4356f0-b75f-4513-8910-6a1177de5b5a)
-
 
 
 

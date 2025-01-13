@@ -9,15 +9,16 @@ class ApiServices {
   ApiServices._();
 
   static final ApiServices apiServices = ApiServices._();
-  String api =
-      "https://newsapi.org/v2/top-headlines?category=technology&apiKey=${Contents.API_KEY}";
 
-  Future<List<Article>?> fetchNews() async {
+  Future<List<Article>?> fetchNews(String cat) async {
+    String api =
+        "https://newsapi.org/v2/top-headlines?category=$cat&apiKey=${Contents.API_KEY}";
+
     http.Response response = await http.get(Uri.parse("$api"));
     if (response.statusCode == 200) {
-/*
+    /*
       print("response: ${response.body}");
-*/
+    */
 
       Map decodedData = jsonDecode(response.body);
 
